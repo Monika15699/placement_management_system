@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 Oct, 2021 2:52:39 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="studpack.AddCompany" table="ADDCOMPANY">
+        <id name="comId" type="int">
+            <column name="COMID" />
+            <generator class="assigned" />
+        </id>
+        <property name="ComName" type="java.lang.String">
+            <column name="COMNAME" />
+        </property>
+        <property name="ComEmail" type="java.lang.String">
+            <column name="COMEMAIL" />
+        </property>
+        <property name="phnNum" type="int">
+            <column name="PHNNUM" />
+        </property>
+        <property name="noOfvac" type="int">
+            <column name="NOOFVAC" />
+        </property>
+        <property name="skils" type="java.lang.String">
+            <column name="SKILS" />
+        </property>
+        <property name="ctc" type="int">
+            <column name="CTC" />
+        </property>
+        <property name="location" type="java.lang.String">
+            <column name="LOCATION" />
+        </property>
+    </class>
+</hibernate-mapping>
